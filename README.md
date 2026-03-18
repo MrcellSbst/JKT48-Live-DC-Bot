@@ -1,22 +1,22 @@
-# 🎤 JKT48 Live Bot
+# JKT48 Live Bot
 
-A Discord bot that monitors **JKT48** member live streams on [IDN Live](https://www.idn.app) and [SHOWROOM](https://www.showroom-live.com), relaying real-time go-live and end-of-live notifications directly into a Discord channel.
+A Discord bot that monitors **JKT48** member live streams on [IDN Live](https://www.idn.app) and [SHOWROOM](https://www.showroom-live.com), delivering real-time go-live and end-of-live notifications directly to a Discord channel.
 
 ---
 
-## ✨ Features
+## Features
 
 | Feature | Description |
 |---|---|
-| 🔴 **IDN Live detection** | Polls the IDN Live GraphQL API every 2 minutes and notifies when a JKT48 member goes live |
-| 🟣 **SHOWROOM detection** | Polls the SHOWROOM API for JKT48 room live sessions |
-| ⚫ **Live end detection** | Detects when a live session ends and posts a summary embed with duration |
-| ️ **Persistent state** | SQLite database tracks live session history to avoid duplicate notifications across restarts |
-| 🤖 **Slash & prefix commands** | `/streams` slash command and `!streams` prefix command to check current live sessions on demand |
+| **IDN Live detection** | Polls the IDN Live GraphQL API every 2 minutes and notifies when a JKT48 member goes live |
+| **SHOWROOM detection** | Polls the SHOWROOM API for JKT48 room live sessions |
+| **Live end detection** | Detects when a live session ends and posts a summary embed with session duration |
+| **Persistent state** | SQLite database tracks live session history to prevent duplicate notifications across restarts |
+| **Slash and prefix commands** | `/streams` slash command and `!streams` prefix command to check current live sessions on demand |
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -58,12 +58,12 @@ python jkt48_live_bot.py
 
 ---
 
-## 🔧 Discord Bot Setup
+## Discord Bot Setup
 
-In the [Discord Developer Portal](https://discord.com/developers/applications), make sure your bot has the following:
+In the [Discord Developer Portal](https://discord.com/developers/applications), ensure your bot has the following configuration:
 
 **Privileged Gateway Intents:**
-- ✅ Message Content Intent
+- Message Content Intent
 
 **Bot Permissions (when inviting):**
 - Send Messages
@@ -77,7 +77,7 @@ https://discord.com/api/oauth2/authorize?client_id=CLIENT_ID&permissions=51200&s
 
 ---
 
-##  Bot Commands
+## Bot Commands
 
 | Command | Type | Description |
 |---|---|---|
@@ -87,7 +87,7 @@ https://discord.com/api/oauth2/authorize?client_id=CLIENT_ID&permissions=51200&s
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 JKT48Bot/
@@ -100,17 +100,17 @@ JKT48Bot/
 
 ---
 
-## 🎛️ Configuration Reference
+## Configuration Reference
 
 | Variable | Required | Default | Description |
 |---|---|---|---|
-| `DISCORD_TOKEN` | ✅ Yes | — | Discord bot token |
-| `DISCORD_CHANNEL_ID` | ✅ Yes | — | Target channel for notifications |
+| `DISCORD_TOKEN` | Yes | — | Discord bot token |
+| `DISCORD_CHANNEL_ID` | Yes | — | Target channel for notifications |
 | `LIVE_STATUS_DB` | No | `data/live_status.db` | Path to SQLite database file |
 
 ---
 
-## 🛠️ Dependencies
+## Dependencies
 
 | Package | Purpose |
 |---|---|
@@ -120,10 +120,6 @@ JKT48Bot/
 
 ---
 
-## 📝 License
+## License
 
-MIT License — feel free to fork and adapt for other idol groups or live platforms.
-
----
-
-> Made with ❤️ for JKT48 fans.
+MIT License — free to fork and adapt for other idol groups or live platforms.
