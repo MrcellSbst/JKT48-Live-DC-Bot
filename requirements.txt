@@ -1,0 +1,6 @@
+# JKT48 Live Bot — Python dependencies
+# Install with: pip install -r requirements.txt
+
+discord.py>=2.3.0
+aiohttp>=3.9.0
+python-dotenv>=1.0.0
